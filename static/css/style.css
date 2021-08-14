@@ -185,7 +185,7 @@ img.myimg{
   width:300px;
   height:250px;
   object-fit:cover;
-  object-position: 50% 10%;
+  object-position: 50% 100%;
   border-radius:50%;
   border: 3px solid #CCD1D1;
   float: left;
