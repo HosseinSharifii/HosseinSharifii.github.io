@@ -187,6 +187,20 @@ div.blog-epilogue a         {text-decoration: none;
   font-size: 15px;
   cursor: pointer;
 }
+
+.page button{
+  padding: 10px 10px;
+  color: #8a33a0;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.hide{
+  display:none;
+}
+
 .text.show-more .more-text{
   display: inline;
 }
