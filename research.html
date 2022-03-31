@@ -33,16 +33,61 @@
 
       <div class=body>
         <div class=page>
-          <ul>  
-            <li><strong>Left ventricular growth and remodeling (G&R)</strong></li>
-            <p>
-              Give an Abstract,
-              statistics, 
-              HCM, 
-              multiscale modeling
+          <div class = "container"> 
+            <h2><strong>Multiscale modeling of LV growth in valvular diseases </strong></h2>
+            <p><img alt = "Growth" class="growth_pymyovent" src="./static/figures/pymyovent_test.png" >
+              The heart adapts to its environment and changes its shape (referred as cardiac growth) 
+              in response to hemodynamic loads, including pathological conditions associated with valvular
+              disease. In valvular disease, cardiac growth initiates as an early adaptive response that 
+              can progress to remodeling and subsequent heart failure if the valvular dysfunction persists.
+              In this study, we initially extended PyMyoVent with concentric growth (wall thickening / thinning) and 
+              eccentric growth (chamber dilation / constriction) driven by cell-level stresses in half-sarcomeres.
             </p>
-          </ul>
 
+            
+            <center><iframe width="560" height="315" src="https://www.youtube.com/embed/EO-HItBaf1M" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe></center>
+            </div>  
+            <p>
+              In the next attempt, we hypothesized the idea of concentric growth being driven by
+              by the energy used by the myocytes for contraction (expressed as myosin ATPase normalized
+              to myofibrillar volume). The new framework reproduced clinical measures of left ventricular
+              growth in three types of valvular disease, namely aortic stenosis, aortic insufficiency,
+              and mitral insufficiency.
+            </p>
+
+          <div class=separator_line></div>
+            <div class = "container">
+              <h2><strong>Systolic strain analysis using MRI images</strong></h2>
+              <p><img alt = "strain" class="mri_strain" src="./static/figures/MRI_strain.png" >
+                Cardiac magnetic resonance (CMR) imaging is a widely used method for assessing cardiac 
+                structure and function. Myocardial strain, which can be derived from CMR images, has been 
+                investigated as a possible diagnostic tool for estimating contractile function in the heart.
+                Recently, feature-tracking of cine images has been used to calculate systolic strain in 
+                patients with various types of heart disease in order to predict functional recovery and clinical outcomes.
+                Although, mouse models are commonly used to enhance our understanding of cardiac disease, 
+                strain derived using feature-tracking of cine images has not been widely investigated in mice.
+              </p>
+            </div>
+
+          <div class=separator_line></div>
+
+            <div class = "container">
+              <h2><strong>Baroreflex control of arterial pressure</strong></h2>
+              <p><img alt = "Baroreflex" class="baroreflex_pymyovent" src="./static/figures/pymyovent_baro_only.png" >
+                Baroreceptors are sensors lcoated at carotid sinus and aortic arch which are parts of 
+                the short-term hemodynamics feedback control of arterial pressre within our body. The main
+                goal of baroeflex mechanism is to maintain arterial pressure within the normal range by regulating 
+                of cardiac function via sympathetic and parasympathetic neuron pathways. Thereby, having a model of  
+                hemodynamic feedback loop iplmented into multiscale models of cardiovascular function is necessary.
+                PyMyoVent is a multiscale model of single left ventricle that pumps blood around a sytemic model of 
+                circulation. We have implemented a model of baroreflex control of arterial pressure to PyMyoVent
+                that regulates chronotropism, cell-level contractility, and vascular tone. 
+                  
+              </p>
+            </div>
         </div>
       </div>
 
