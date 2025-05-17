@@ -28,7 +28,7 @@
   <main class="container mx-auto px-4 py-12">
     <h2 class="text-3xl font-semibold mb-4">Portfolio</h2>
     <p class="text-gray-700 mb-8">
-      My work spans algorithm development, finite element modeling, data analysis, and machine learning, with applications in cardiac simulations and beyond. Below are key experiences showcasing my expertise in computational science and engineering.
+      My work spans algorithm development, finite element modeling, data analysis, and machine learning, with applications in cardiac simulations and beyond. Below are key experiences showcasing my expertise in computational science and engineering. Click "Read More" to explore detailed insights for each project.
     </p>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -41,6 +41,12 @@
         <p class="text-gray-600 mb-4">
           <strong>Skills:</strong> Algorithm Development, FEA, Python (FEniCS, pandas), Data Analysis, Signal Processing
         </p>
+        <button class="toggle-details text-blue-600 hover:underline mb-4" data-target="genetesis-details">Read More</button>
+        <div id="genetesis-details" class="details hidden text-gray-600 mb-4 transition-all duration-300">
+          <p>
+            At Genetesis, I designed and implemented multiscale finite element models to simulate cardiac electrophysiology, focusing on magnetocardiograms (MCGs) for non-invasive cardiac diagnostics. Using FEniCS, I developed algorithms to reconstruct the heart’s anatomical shape from MCG signals and investigated the impact of cardiac diseases on magnetic fields, validated against clinical data. I also led the development of an inverse modeling algorithm, collaborating with R&D teams to drive product innovation. My Python scripts automated post-processing and visualization, enabling weekly progress reports to stakeholders.
+          </p>
+        </div>
       </div>
 
       <div class="bg-white p-6 rounded-lg shadow">
@@ -52,6 +58,12 @@
         <p class="text-gray-600 mb-4">
           <strong>Skills:</strong> FEA (Abaqus), Machine Learning (scikit-learn), Python, Data Visualization
         </p>
+        <button class="toggle-details text-blue-600 hover:underline mb-4" data-target="dassault-details">Read More</button>
+        <div id="dassault-details" class="details hidden text-gray-600 mb-4 transition-all duration-300">
+          <p>
+            As a Biomechanical Engineer Intern at Dassault Systèmes, I contributed to the Living Heart Project’s ENRICHMENT study, simulating MitraClip deployment for mitral valve repair using Abaqus. I developed large-scale FEM simulations to validate device performance, collaborating with clinical advisors to inform FDA regulatory strategies. By integrating machine learning (scikit-learn), I created surrogate models for virtual patient cohorts, accelerating in silico clinical trials. I also incorporated baroreflex loops into cardiac circulation models and presented findings to principal investigators, enhancing device evaluation workflows.
+          </p>
+        </div>
       </div>
 
       <div class="bg-white p-6 rounded-lg shadow">
@@ -63,9 +75,15 @@
         <p class="text-gray-600 mb-4">
           <strong>Skills:</strong> Algorithm Development, FEA, Python (FEniCS), Research, Data Analysis
         </p>
-        <p class="text-gray-600">
+        <p class="text-gray-600 mb-4">
           <strong>Links:</strong> <a href="https://github.com/MMoTH/FEniCS-Myosim" class="text-blue-600 hover:underline">GitHub</a>, <a href="https://mmoth.github.io/FEniCS-Myosim/" class="text-blue-600 hover:underline">Docs</a>
         </p>
+        <button class="toggle-details text-blue-600 hover:underline mb-4" data-target="myofe-details">Read More</button>
+        <div id="myofe-details" class="details hidden text-gray-600 mb-4 transition-all duration-300">
+          <p>
+            MyoFE is a multiscale finite element model I developed to simulate left ventricular mechanics, integrating a baroreflex feedback loop to regulate arterial pressure. Using FEniCS, I coupled molecular-level myofilament dynamics with organ-level circulation, modulating parameters like heart rate and vascular tone. The model accurately simulated valvular diseases (e.g., aortic stenosis, mitral regurgitation) and their impact on LV growth, as published in journals like <i>Comput Biol Med</i>. My work demonstrated the critical role of baroreflex in realistic hemodynamics, paving the way for computational studies of cardiac remodeling.
+          </p>
+        </div>
       </div>
 
       <div class="bg-white p-6 rounded-lg shadow">
@@ -79,9 +97,15 @@
         <p class="text-gray-600 mb-4">
           <strong>Skills:</strong> Algorithm Development, Python, Research, Data Visualization
         </p>
-        <p class="text-gray-600">
+        <p class="text-gray-600 mb-4">
           <strong>Links:</strong> <a href="https://github.com/Campbell-Muscle-Lab/PyMyoVent" class="text-blue-600 hover:underline">GitHub</a>, <a href="https://campbell-muscle-lab.github.io/PyMyoVent/" class="text-blue-600 hover:underline">Docs</a>
         </p>
+        <button class="toggle-details text-blue-600 hover:underline mb-4" data-target="pymyovent-details">Read More</button>
+        <div id="pymyovent-details" class="details hidden text-gray-600 mb-4 transition-all duration-300">
+          <p>
+            PyMyoVent is a Python-based framework I developed to simulate left ventricular function and growth in response to valvular diseases like aortic stenosis and mitral regurgitation. I extended the model with a growth algorithm based on volumetric growth theory, where concentric growth (wall thickening) responds to total fiber stress and eccentric growth (chamber dilation) to passive stress. The framework, validated against clinical measures, predicted LV remodeling and reversal post-treatment, as published in <i>Ann Biomed Eng</i>. A YouTube demo showcases its capabilities, and the open-source code is widely used in cardiac research.
+          </p>
+        </div>
       </div>
 
       <div class="bg-white p-6 rounded-lg shadow">
@@ -93,9 +117,15 @@
         <p class="text-gray-600 mb-4">
           <strong>Skills:</strong> Python (pandas, Matplotlib), Data Analysis, Software Development
         </p>
-        <p class="text-gray-600">
+        <p class="text-gray-600 mb-4">
           <strong>Links:</strong> <a href="https://github.com/Campbell-Muscle-Lab/PyCMLutilities" class="text-blue-600 hover:underline">GitHub</a>, <a href="https://pypi.org/project/PyCMLutil/" class="text-blue-600 hover:underline">PyPI</a>, <a href="https://campbell-muscle-lab.github.io/PyCMLutilities/" class="text-blue-600 hover:underline">Docs</a>
         </p>
+        <button class="toggle-details text-blue-600 hover:underline mb-4" data-target="pycmlutil-details">Read More</button>
+        <div id="pycmlutil-details" class="details hidden text-gray-600 mb-4 transition-all duration-300">
+          <p>
+            PyCMLutil is a Python library I developed to streamline data analysis and visualization for cardiac research. It provides tools for curve-fitting, plotting, and processing large datasets, leveraging libraries like pandas and Matplotlib. The library, available on PyPI, has been adopted by researchers for its user-friendly interface and robust functionality. I designed it to automate repetitive tasks in scientific workflows, such as generating publication-quality plots, significantly improving efficiency in multidisciplinary projects.
+          </p>
+        </div>
       </div>
 
       <div class="bg-white p-6 rounded-lg shadow">
@@ -107,6 +137,12 @@
         <p class="text-gray-600 mb-4">
           <strong>Skills:</strong> Data Analysis, Image Processing, Research, MATLAB
         </p>
+        <button class="toggle-details text-blue-600 hover:underline mb-4" data-target="strain-details">Read More</button>
+        <div id="strain-details" class="details hidden text-gray-600 mb-4 transition-all duration-300">
+          <p>
+            In collaboration with the University of Kentucky’s Department of Physiology, I analyzed cardiac magnetic resonance (CMR) images to quantify myocardial strain in mouse models using feature-tracking techniques. Leveraging MATLAB for image processing, I developed workflows to extract systolic strain data, correlating it with contractile function to predict cardiac outcomes. This research, published in <i>Cardiovasc Eng Tech</i>, provided insights into heart disease mechanisms, demonstrating the potential of CMR strain analysis as a diagnostic tool in preclinical studies.
+          </p>
+        </div>
       </div>
     </div>
 
