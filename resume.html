@@ -1,67 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Noticia+Text:400,700' rel='stylesheet' type='text/css' />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
-    <link rel="icon" href="./static/figures/favicon.ico">
-
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-    
-    <title>Hossein Sharifi, PhD | About</title>
-
-    <link rel="stylesheet" href="./static/css/style.css?20210206H0555" type="text/css" />
-  </head>
-
-  <body>
-
-    <div class=container>
-
-      <span class=name><a href="./index.html">Hossein Sharifi, PhD</a></span>
-      <div class=navigation>
-        <ul>
-          <li><a href="./projects.html">Projects</a> </li>
-          <li><a href="./publications.html">Publications</a> </li>
-          <li><a href="./research.html">Research</a> </li>
-          <li><a href="./resume.html">Resume</a> </li>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hossein Sharifi, PhD | Resume</title>
+  <link rel="icon" href="./static/figures/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans">
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">
+        <a href="./index.html">Hossein Sharifi, PhD</a>
+      </h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="./portfolio.html" class="text-gray-700 hover:text-blue-600">Portfolio</a></li>
+          <li><a href="./publications.html" class="text-gray-700 hover:text-blue-600">Publications</a></li>
+          <li><a href="./resume.html" class="text-gray-700 hover:text-blue-600">Resume</a></li>
         </ul>
-      </div>
-
-      <div class=separator></div>
-
-      <div class=body>
-        <ul>
-          <li>The updated version of my resume can be found <a href="./static/documents/HS_Resume_sep_2024.pdf" download> here</a>.</li>
-          
-          <li>The updated version of my one-page CV can be found <a href="./static/documents/HS_CV.pdf" download> here</a>. </li>
-        </ul>
-        
-        
-      </div>
-
-      <div class=footer>
-        <p>&copy; Copyright <script language="JavaScript">var date = new Date(); document.write(date.getFullYear());</script> by Hossein Sharifi</p>
-        <div class=social style="font-size: 27px;">
-          <ul>
-            <script language="JavaScript">
-              front = 'hosseinsharifi71';
-              school = 'gmail';
-              tld = 'com';
-              document.write('<a href=\"mailto:' + front + '@' + school + '.' + tld + '\" target=\"_blank\">');
-            </script>
-            <li><i class="fa fa-envelope"></i> </li>
-            <a href="https://twitter.com/Sharifi_UKY" target="_blank"> <li> <i class="fa fa-twitter" style="color:#2AA3ED"></i> </li> </a>
-            <a href="https://github.com/HosseinSharifii" target="_blank"> <li> <i class="fa fa-github" style="color:black"></i> </li> </a>
-            <a href="https://scholar.google.com/citations?user=XFiIzFIAAAAJ&hl=en" target="_blank"> <li> <i class="ai ai-google-scholar" style="color:#288AE2"></i> </li> </a>
-            <a href="https://www.linkedin.com/feed/" target="_blank"> <li> <i class="fa fa-linkedin-square" style="color:black"></i> </li> </a> 
-          </ul>
-        </div>
-      </div>
-
+      </nav>
     </div>
+  </header>
 
-  </body>
+  <main class="container mx-auto px-4 py-12">
+    <h2 class="text-3xl font-semibold mb-4">Resume</h2>
+    <p class="text-gray-700 mb-6">
+      I am a Computational Scientist with expertise in algorithm development, finite element modeling, and data analysis, applied to cardiac simulations and biomedical engineering. My work includes multiscale modeling at Genetesis, FEM simulations for the Living Heart Project, and published research on left ventricular mechanics.
+    </p>
+    <p class="text-gray-700 mb-6">
+      <strong>Key Skills:</strong> Python (FEniCS, pandas, scikit-learn), MATLAB, C++, FEA (Abaqus), Machine Learning, Signal Processing, Data Visualization.
+    </p>
+    <p class="text-gray-700 mb-8">
+      Download my full resume for a detailed overview of my experience, education, and publications.
+    </p>
+    <a href="./static/documents/HS_Resume_sep_2024.pdf" download class="inline-block bg-blue-600 text-white font-semibold py-2 px-4 rounded hover:bg-blue-700 transition">
+      Download Resume
+    </a>
+  </main>
+
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto px-4 text-center">
+      <p>© <script>document.write(new Date().getFullYear());</script> Hossein Sharifi</p>
+      <ul class="flex justify-center space-x-6 mt-4">
+        <li>
+          <a href="mailto:hosseinsharifi71@gmail.com?subject=Contact%20from%20Website" title="Email Hossein Sharifi">
+            <i class="fa fa-envelope text-white"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://x.com/Sharifi_UKY" target="_blank" title="Follow on X">
+            <i class="fa-brands fa-x-twitter text-white"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/HosseinSharifii" target="_blank" title="View GitHub">
+            <i class="fa-brands fa-github text-white"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://scholar.google.com/citations?user=XFiIzFIAAAAJ" target="_blank" title="Google Scholar Profile">
+            <i class="fa fa-graduation-cap text-white"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/hossein-sharifi-phd-98a805bb" target="_blank" title="Connect on LinkedIn">
+            <i class="fa-brands fa-linkedin text-white"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
 </html>

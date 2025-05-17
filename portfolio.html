@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hossein Sharifi, PhD | Portfolio</title>
+  <link rel="icon" href="./static/figures/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans">
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">
+        <a href="./index.html">Hossein Sharifi, PhD</a>
+      </h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="./portfolio.html" class="text-gray-700 hover:text-blue-600">Portfolio</a></li>
+          <li><a href="./publications.html" class="text-gray-700 hover:text-blue-600">Publications</a></li>
+          <li><a href="./resume.html" class="text-gray-700 hover:text-blue-600">Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 py-12">
+    <h2 class="text-3xl font-semibold mb-4">Portfolio</h2>
+    <p class="text-gray-700 mb-8">
+      My work spans algorithm development, finite element modeling, data analysis, and machine learning, with applications in cardiac simulations and beyond. Below are key experiences showcasing my expertise in computational science and engineering.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h3 class="text-xl font-medium mb-2">Cardiac Electrophysiology Simulation at Genetesis</h3>
+        <img src="./static/figures/growth_myofe.png" alt="Genetesis Simulation" class="w-full h-48 object-cover rounded mb-4">
+        <p class="text-gray-600 mb-4">
+          Developed multiscale FEA models using FEniCS to simulate cardiac electrophysiology, enhancing diagnostic accuracy for CardioFlux magnetocardiograms. Led inverse modeling algorithms and data visualization for clinical validation.
+        </p>
+        <p class="text-gray-600 mb-4">
+          <strong>Skills:</strong> Algorithm Development, FEA, Python (FEniCS, pandas), Data Analysis, Signal Processing
+        </p>
+      </div>
+
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h3 class="text-xl font-medium mb-2">Living Heart Project at Dassault Systèmes</h3>
+        <img src="./static/figures/myofe_with_baro_and_gr.png" alt="Living Heart Project" class="w-full h-48 object-cover rounded mb-4">
+        <p class="text-gray-600 mb-4">
+          Conducted Abaqus-based FEM simulations for mitral valve repair in the ENRICHMENT project, integrating machine learning to create virtual patient cohorts. Supported FDA regulatory strategies through in silico clinical trials.
+        </p>
+        <p class="text-gray-600 mb-4">
+          <strong>Skills:</strong> FEA (Abaqus), Machine Learning (scikit-learn), Python, Data Visualization
+        </p>
+      </div>
+
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h3 class="text-xl font-medium mb-2">MyoFE: Multiscale Cardiac Modeling</h3>
+        <img src="./static/figures/baro_myofe.png" alt="MyoFE Model" class="w-full h-48 object-cover rounded mb-4">
+        <p class="text-gray-600 mb-4">
+          Developed MyoFE, a multiscale FEA model of the left ventricle with baroreflex control, simulating cardiac mechanics and arterial pressure regulation. Published findings on valvular disease impacts.
+        </p>
+        <p class="text-gray-600 mb-4">
+          <strong>Skills:</strong> Algorithm Development, FEA, Python (FEniCS), Research, Data Analysis
+        </p>
+        <p class="text-gray-600">
+          <strong>Links:</strong> <a href="https://github.com/MMoTH/FEniCS-Myosim" class="text-blue-600 hover:underline">GitHub</a>, <a href="https://mmoth.github.io/FEniCS-Myosim/" class="text-blue-600 hover:underline">Docs</a>
+        </p>
+      </div>
+
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h3 class="text-xl font-medium mb-2">PyMyoVent: LV Growth Simulation</h3>
+        <div class="relative w-full h-48 mb-4">
+          <iframe class="w-full h-full rounded" src="https://www.youtube.com/embed/EO-HItBaf1M" title="PyMyoVent Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p class="text-gray-600 mb-4">
+          Built PyMyoVent, a Python-based model simulating left ventricular growth in valvular diseases. Extended with growth algorithms to predict concentric and eccentric remodeling, validated against clinical data.
+        </p>
+        <p class="text-gray-600 mb-4">
+          <strong>Skills:</strong> Algorithm Development, Python, Research, Data Visualization
+        </p>
+        <p class="text-gray-600">
+          <strong>Links:</strong> <a href="https://github.com/Campbell-Muscle-Lab/PyMyoVent" class="text-blue-600 hover:underline">GitHub</a>, <a href="https://campbell-muscle-lab.github.io/PyMyoVent/" class="text-blue-600 hover:underline">Docs</a>
+        </p>
+      </div>
+
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h3 class="text-xl font-medium mb-2">PyCMLutil: Data Analysis Toolkit</h3>
+        <img src="./static/figures/2X2_mix.png" alt="PyCMLutil Plots" class="w-full h-48 object-cover rounded mb-4">
+        <p class="text-gray-600 mb-4">
+          Created PyCMLutil, a Python library for curve-fitting, plotting, and data analysis, streamlining scientific visualization workflows for cardiac research.
+        </p>
+        <p class="text-gray-600 mb-4">
+          <strong>Skills:</strong> Python (pandas, Matplotlib), Data Analysis, Software Development
+        </p>
+        <p class="text-gray-600">
+          <strong>Links:</strong> <a href="https://github.com/Campbell-Muscle-Lab/PyCMLutilities" class="text-blue-600 hover:underline">GitHub</a>, <a href="https://pypi.org/project/PyCMLutil/" class="text-blue-600 hover:underline">PyPI</a>, <a href="https://campbell-muscle-lab.github.io/PyCMLutilities/" class="text-blue-600 hover:underline">Docs</a>
+        </p>
+      </div>
+
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h3 class="text-xl font-medium mb-2">Myocardial Strain Analysis in Mice</h3>
+        <img src="./static/figures/MRI_strain.png" alt="MRI Strain Analysis" class="w-full h-48 object-cover rounded mb-4">
+        <p class="text-gray-600 mb-4">
+          Quantified myocardial strain in mouse hearts using CMR feature-tracking, collaborating with physiologists to analyze MRI data and predict cardiac function.
+        </p>
+        <p class="text-gray-600 mb-4">
+          <strong>Skills:</strong> Data Analysis, Image Processing, Research, MATLAB
+        </p>
+      </div>
+    </div>
+
+    <p class="text-gray-700 mt-8">
+      Interested in collaborating or learning more about my work? Feel free to <a href="mailto:hosseinsharifi71@gmail.com" class="text-blue-600 hover:underline">contact me</a>!
+    </p>
+  </main>
+
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto px-4 text-center">
+      <p>© <script>document.write(new Date().getFullYear());</script> Hossein Sharifi</p>
+      <ul class="flex justify-center space-x-6 mt-4">
+        <li>
+          <a href="mailto:hosseinsharifi71@gmail.com?subject=Contact%20from%20Website" title="Email Hossein Sharifi">
+            <i class="fa fa-envelope text-white"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://x.com/Sharifi_UKY" target="_blank" title="Follow on X">
+            <i class="fa-brands fa-x-twitter text-white"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/HosseinSharifii" target="_blank" title="View GitHub">
+            <i class="fa-brands fa-github text-white"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://scholar.google.com/citations?user=XFiIzFIAAAAJ" target="_blank" title="Google Scholar Profile">
+            <i class="fa fa-graduation-cap text-white"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/hossein-sharifi-phd-98a805bb" target="_blank" title="Connect on LinkedIn">
+            <i class="fa-brands fa-linkedin text-white"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
