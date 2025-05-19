@@ -35,14 +35,13 @@
       <div class="bg-white p-6 rounded-lg shadow">
         <h3 class="text-xl font-medium mb-2">Inverse Modeling of Cardiac Activation Sites from Magnetocardiography for Ventricular Arrhythmia Localization</h3>
         <div class="relative">
-          <img src="./static/figures/inverse_modeling_localization.png" alt="MCG Activation Sites" class="w-full h-84 object-cover rounded mb-2">
-          
+          <img src="./static/figures/inverse_modeling_localization.png" alt="MCG Activation Sites" class="w-full h-48 object-cover rounded mb-2">
         </div>
         <p class="text-gray-600 mb-4">
           Developed inverse modeling algorithms to localize cardiac activation sites from magnetocardiography (MCG) signals, enhancing non-invasive diagnosis of ventricular arrhythmias for clinical applications.
         </p>
         <p class="text-gray-600 mb-4">
-          <strong>Skills:</strong> Algorithm Development, Finite Element Analysis, Python (FEniCS, NumPy), Signal Processing, Data Analysis
+          <strong>Skills:</strong> Algorithm Development, Software Development, Python, Signal Processing, Data Analysis
         </p>
         <p class="text-gray-600 mb-4">
           <strong>Links:</strong> To be added
@@ -52,8 +51,15 @@
         </div>
         <div id="mcg-activation-details" class="details hidden text-gray-600 mb-4 transition-all duration-300">
           <p>
-            This project focused on developing advanced inverse modeling techniques to identify cardiac activation sites from magnetocardiography (MCG) signals, enabling precise localization of ventricular arrhythmias. Leveraging computational models and signal processing, I aimed to improve diagnostic accuracy for non-invasive cardiac assessments. [Detailed description to be provided.]
+            At Genetesis, I developed inverse modeling algorithms to localize premature ventricular contraction (PVC) activation sites non-invasively using magnetocardiography (MCG) signals, co-registered with MRI or CT imaging. I evaluated two methods—Equivalent Current Density Vector (ECDV) and AGMN-RUG Spatial Filter—using simulated MCG data from 17 American Heart Association heart segments. The AGMN-RUG method outperformed ECDV and another approach, achieving an average localization error of ~10mm and 96% accuracy in predicting endocardial vs. epicardial surfaces, enhancing CardioFlux diagnostics.
           </p>
+          <ul class="list-disc pl-5 mb-4">
+            <li>Implemented the ECDV method, using a grid search over a heart mesh to solve for current density via least squares, identifying activation sites with ~13mm average error.</li>
+            <li>Developed the AGMN-RUG Spatial Filter, an iterative algorithm with a recursively updated Gram matrix, achieving ~10mm error and 96% surface prediction accuracy.</li>
+            <li>Compared both methods against a third approach, validating performance with simulated MCG signals from 17 cardiac segments.</li>
+            <li>Utilized Python (NumPy, SciPy) for signal processing and visualization, automating workflows for clinical applications.</li>
+            <li>Collaborated with R&D teams to refine algorithms, paving the way for non-invasive PVC ablation planning.</li>
+          </ul>
           <div class="button-container-bottom hidden" data-target="mcg-activation-details"></div>
         </div>
       </div>
@@ -61,13 +67,13 @@
       <div class="bg-white p-6 rounded-lg shadow">
         <h3 class="text-xl font-medium mb-2">Inverse Modeling of Cardiac Anatomy from Magnetocardiography Signals</h3>
         <div class="relative">
-          <img src="./static/figures/inverse_modeling_anatomy_wide.png" alt="MCG Cardiac Anatomy" class="w-full h-84 object-cover rounded mb-2">
+          <img src="./static/figures/inverse_modeling_anatomy_wide.png" alt="MCG Heart Anatomy Reconstruction" class="w-full h-48 object-cover rounded mb-2">
         </div>
         <p class="text-gray-600 mb-4">
-          Designed inverse modeling algorithms to reconstruct cardiac anatomy from magnetocardiography (MCG) signals, advancing non-invasive diagnostic capabilities for cardiovascular diseases.
+          Developed AGMN-RUG-based algorithms with a box-shaped search grid to reconstruct heart location and 3D anatomy from magnetocardiography (MCG) signals, exploring anatomical modality of MCG.
         </p>
         <p class="text-gray-600 mb-4">
-          <strong>Skills:</strong> Algorithm Development, Finite Element Analysis, Python (FEniCS, pandas), Signal Processing, Computational Modeling
+          <strong>Skills:</strong> Algorithm Development, Software Development, Python, Signal Processing, Temporal and Spatial filtering, Data Analysis
         </p>
         <p class="text-gray-600 mb-4">
           <strong>Links:</strong> To be added
@@ -77,38 +83,56 @@
         </div>
         <div id="mcg-anatomy-details" class="details hidden text-gray-600 mb-4 transition-all duration-300">
           <p>
-            This project involved creating inverse modeling algorithms to reconstruct the heart’s anatomical structure from magnetocardiography (MCG) signals, supporting non-invasive diagnostics for cardiovascular conditions. Using finite element methods and Python-based tools, I developed workflows to enhance anatomical accuracy. [Detailed description to be provided.]
+            At Genetesis, I extended the AGMN-RUG Spatial Filter algorithm to reconstruct the heart’s location and 3D anatomy non-invasively from magnetocardiography (MCG) signals, complementing activation site localization. Using a box-shaped search grid, I tracked current density vector movements over extended periods to estimate myocardial position and shape. By applying filtering and smoothing, I achieved rough estimations of heart distance, rotation, and 3D structure, adding a novel anatomical modality to CardioFlux diagnostics.
           </p>
+          <ul class="list-disc pl-5 mb-4">
+            <li>Adapted the AGMN-RUG Spatial Filter to track activation sites over time within a box-shaped search grid, estimating heart location (distance and rotation).</li>
+            <li>Developed algorithms to reconstruct the 3D myocardial shape by filtering and smoothing current density vector data from MCG signals.</li>
+            <li>Utilized Python (NumPy, SciPy) for signal processing, visualization, and automation of anatomical reconstruction workflows.</li>
+            <li>Enabled non-invasive estimation of heart anatomy, enhancing MCG’s diagnostic capabilities for cardiovascular conditions.</li>
+            <li>Collaborated with R&D teams to validate reconstructions against simulated data, supporting clinical integration.</li>
+          </ul>
           <div class="button-container-bottom hidden" data-target="mcg-anatomy-details"></div>
         </div>
       </div>
 
       <div class="bg-white p-6 rounded-lg shadow">
         <h3 class="text-xl font-medium mb-2">Cardiac Electrophysiology Simulation at Genetesis</h3>
-        <img src="./static/figures/growth_myofe.png" alt="Genetesis Simulation" class="w-full h-84 object-cover rounded mb-4">
+        <img src="./static/figures/MFM.png" alt="Genetesis Simulation" class="w-full h-48 object-cover rounded mb-4">
         <p class="text-gray-600 mb-4">
-          Developed multiscale FEA models using FEniCS to simulate cardiac electrophysiology, enhancing diagnostic accuracy for CardioFlux magnetocardiograms. Led inverse modeling algorithms and data visualization for clinical validation.
+          Developed multiscale FEA-based algorithms to simulate cardiac electrophysiology, generating MCG signals on a 6x6 sensor array, enabling disease mechanism insights and CardioFlux device improvements.
         </p>
         <p class="text-gray-600 mb-4">
-          <strong>Skills:</strong> Algorithm Development, FEA, Python (FEniCS, pandas), Data Analysis, Signal Processing
+          <strong>Skills:</strong> Algorithm Development, Finite Element Analysis, Software Development, Python (FEniCS, NumPy, SciPy), Signal Processing, Data Analysis, R&D
+        </p>
+        <p class="text-gray-600 mb-4">
+          <strong>Links:</strong> To be added
         </p>
         <div class="button-container" data-target="genetesis-details">
           <button class="toggle-details text-blue-600 hover:underline mb-4" data-target="genetesis-details">Read More</button>
         </div>
         <div id="genetesis-details" class="details hidden text-gray-600 mb-4 transition-all duration-300">
           <p>
-            At Genetesis, I designed and implemented multiscale finite element models to simulate cardiac electrophysiology, focusing on magnetocardiograms (MCGs) for non-invasive cardiac diagnostics. Using FEniCS, I developed algorithms to reconstruct the heart’s anatomical shape from MCG signals and investigated the impact of cardiac diseases on magnetic fields, validated against clinical data. I also led the development of an inverse modeling algorithm, collaborating with R&D teams to drive product innovation. My Python scripts automated post-processing and visualization, enabling weekly progress reports to stakeholders.
+            At Genetesis, I developed multiscale finite element analysis (FEA) algorithms to simulate cardiac electrophysiology (EP) from cell to organ level, generating magnetocardiography (MCG) signals on a 6x6 sensor array for CardioFlux diagnostics. This platform enabled the R&D team to explore disease mechanisms, optimize device design, and investigate MCG-ECG relationships. Using Python and FEniCS, I automated simulations and data visualization, supporting clinical validation and product innovation for non-invasive cardiac diagnostics.
           </p>
+          <ul class="list-disc pl-5 mb-4">
+            <li>Designed multiscale FEA algorithms to model cardiac EP, simulating electrical activity from cellular ion channels to whole-heart propagation.</li>
+            <li>Generated MCG signals using a 6x6 sensor array configuration, replicating CardioFlux sensor outputs for diagnostic analysis.</li>
+            <li>Utilized Python (FEniCS, NumPy, SciPy) for FEA simulations, signal processing, and automated visualization of EP data.</li>
+            <li>Enabled R&D insights into cardiac disease mechanisms and MCG-ECG correlations, validated against simulated and clinical data.</li>
+            <li>Improved CardioFlux device design through simulation-driven feedback, enhancing diagnostic accuracy.</li>
+            <li>Collaborated with R&D teams to integrate simulations into product development, delivering weekly progress visualizations.</li>
+          </ul>
           <div class="button-container-bottom hidden" data-target="genetesis-details"></div>
         </div>
       </div>
 
       <div class="bg-white p-6 rounded-lg shadow">
         <h3 class="text-xl font-medium mb-2">ENRICHMENT In Silico Clinical Trial Project at Dassault Systèmes</h3>
-        <div class="relative w-full h-84 mb-2">
+        <div class="relative w-full h-48 mb-2">
           <iframe class="w-full h-full rounded" src="https://www.youtube.com/embed/8ErWm6iO1ak" title="ENRICHMENT Virtual Twin Simulation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-        <p class="text-sm text-gray-500 mb-4">Demonstration of virtual twin simulations for in silico clinical trials in the ENRICHMENT project.</p>
+        
         <p class="text-gray-600 mb-4">
           Contributed to the FDA-collaborated ENRICHMENT project, developing Abaqus-based FEM simulations for cardiovascular devices and machine learning models for virtual patient cohorts. Supported the ENRICHMENT Playbook for regulatory in silico clinical trials.
         </p>
@@ -141,30 +165,38 @@
 
       <div class="bg-white p-6 rounded-lg shadow">
         <h3 class="text-xl font-medium mb-2">MyoFE: Multiscale Cardiac Modeling</h3>
-        <img src="./static/figures/baro_myofe.png" alt="MyoFE Model" class="w-full h-84 object-cover rounded mb-4">
+        <img src="./static/figures/myofe_with_baro_and gr.png" alt="MyoFE Model" class="w-full h-48 object-cover rounded mb-4">
         <p class="text-gray-600 mb-4">
-          Developed MyoFE, a multiscale FEA model of the left ventricle with baroreflex control, simulating cardiac mechanics and arterial pressure regulation. Published findings on valvular disease impacts.
+          Developed MyoFE, a multiscale FEA framework for left ventricular mechanics, integrating baroreflex control and growth laws to simulate valvular diseases and remodeling, with applications in drug response.
         </p>
         <p class="text-gray-600 mb-4">
-          <strong>Skills:</strong> Algorithm Development, FEA, Python (FEniCS), Research, Data Analysis
+          <strong>Skills:</strong> Algorithm Development, Finite Element Analysis, Python (FEniCS, NumPy, SciPy), Computational Modeling, Data Analysis, Research
         </p>
         <p class="text-gray-600 mb-4">
-          <strong>Links:</strong> <a href="https://github.com/MMoTH/FEniCS-Myosim" class="text-blue-600 hover:underline">GitHub</a>, <a href="https://mmoth.github.io/FEniCS-Myosim/" class="text-blue-600 hover:underline">Docs</a>
+          <strong>Links:</strong> <a href="https://github.com/MMoTH/FEniCS-Myosim" class="text-blue-600 hover:underline">GitHub</a>, <a href="https://mmoth.github.io/FEniCS-Myosim/" class="text-blue-600 hover:underline">Docs</a>, <a href="https://www.sciencedirect.com/science/article/abs/pii/S0010482523011551" class="text-blue-600 hover:underline">Comput Biol Med</a>, <a href="https://www.sciencedirect.com/science/article/abs/pii/S1742706124005750" class="text-blue-600 hover:underline">Acta Biomater</a>, <a href="https://link.springer.com/article/10.1007/s10439-024-03497-x" class="text-blue-600 hover:underline">Ann Biomed Eng</a>
         </p>
         <div class="button-container" data-target="myofe-details">
           <button class="toggle-details text-blue-600 hover:underline mb-4" data-target="myofe-details">Read More</button>
         </div>
         <div id="myofe-details" class="details hidden text-gray-600 mb-4 transition-all duration-300">
           <p>
-            MyoFE is a multiscale finite element model I developed to simulate left ventricular mechanics, integrating a baroreflex feedback loop to regulate arterial pressure. Using FEniCS, I coupled molecular-level myofilament dynamics with organ-level circulation, modulating parameters like heart rate and vascular tone. The model accurately simulated valvular diseases (e.g., aortic stenosis, mitral regurgitation) and their impact on LV growth, as published in journals like <i>Comput Biol Med</i>. My work demonstrated the critical role of baroreflex in realistic hemodynamics, paving the way for computational studies of cardiac remodeling.
+            MyoFE is a multiscale finite element analysis (FEA) framework I developed to simulate left ventricular (LV) mechanics and remodeling, integrating myofilament dynamics, baroreflex control, and volumetric growth laws. Implemented in Python using FEniCS, MyoFE couples sarcomere-level contractile mechanisms with organ-level circulation to model valvular diseases like aortic stenosis and mitral regurgitation. The framework predicts realistic pressure-volume loops, cardiac outputs, and concentric/eccentric hypertrophy, validated against clinical data. Published in <i>Computers in Biology and Medicine</i>, <i>Acta Biomaterialia</i>, and <i>Annals of Biomedical Engineering</i>, MyoFE advances computational studies of cardiac remodeling and drug response.
           </p>
+          <ul class="list-disc pl-5 mb-4">
+            <li>Designed a multiscale FEA model to simulate LV mechanics, integrating myofilament dynamics with whole-heart circulation.</li>
+            <li>Incorporated baroreflex control to regulate heart rate and vascular tone, ensuring realistic hemodynamic responses.</li>
+            <li>Extended MyoFE with volumetric growth laws to predict concentric and eccentric hypertrophy under pressure and volume overload.</li>
+            <li>Simulated valvular diseases (aortic stenosis, mitral regurgitation), producing clinically validated pressure-volume loops and cardiac outputs.</li>
+            <li>Utilized Python (FEniCS, NumPy, SciPy) for FEA, data processing, and visualization of simulation results.</li>
+            <li>Published findings in <i>Comput Biol Med</i>, <i>Acta Biomater</i>, and <i>Ann Biomed Eng</i>, supporting applications in drug development and cardiac research.</li>
+          </ul>
           <div class="button-container-bottom hidden" data-target="myofe-details"></div>
         </div>
       </div>
 
       <div class="bg-white p-6 rounded-lg shadow">
         <h3 class="text-xl font-medium mb-2">PyMyoVent: LV Growth Simulation</h3>
-        <div class="relative w-full h-84 mb-4">
+        <div class="relative w-full h-48 mb-4">
           <iframe class="w-full h-full rounded" src="https://www.youtube.com/embed/EO-HItBaf1M" title="PyMyoVent Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <p class="text-gray-600 mb-4">
@@ -174,7 +206,7 @@
           <strong>Skills:</strong> Algorithm Development, Python, Research, Data Visualization
         </p>
         <p class="text-gray-600 mb-4">
-          <strong>Links:</strong> <a href="https://github.com/Campbell-Muscle-Lab/PyMyoVent" class="text-blue-600 hover:underline">GitHub</a>, <a href="https://campbell-muscle-lab.github.io/PyMyoVent/" class="text-blue-600 hover:underline">Docs</a>
+          <strong>Links:</strong> <a href="https://github.com/Campbell-Muscle-Lab/PyMyoVent" class="text-blue-600 hover:underline">GitHub</a>, <a href="https://campbell-muscle-lab.github.io/PyMyoVent/" class="text-blue-600 hover:underline">Docs</a>, <a href="https://link.springer.com/article/10.1007/s10237-022-01628-8" class="text-blue-600 hover:underline">Publication</a>
         </p>
         <div class="button-container" data-target="pymyovent-details">
           <button class="toggle-details text-blue-600 hover:underline mb-4" data-target="pymyovent-details">Read More</button>
@@ -189,7 +221,7 @@
 
       <div class="bg-white p-6 rounded-lg shadow">
         <h3 class="text-xl font-medium mb-2">PyCMLutil: Data Analysis Toolkit</h3>
-        <img src="./static/figures/2X2_mix.png" alt="PyCMLutil Plots" class="w-full h-84 object-cover rounded mb-4">
+        <img src="./static/figures/2X2_mix.png" alt="PyCMLutil Plots" class="w-full h-48 object-cover rounded mb-4">
         <p class="text-gray-600 mb-4">
           Created PyCMLutil, a Python library for curve-fitting, plotting, and data analysis, streamlining scientific visualization workflows for cardiac research.
         </p>
@@ -212,20 +244,30 @@
 
       <div class="bg-white p-6 rounded-lg shadow">
         <h3 class="text-xl font-medium mb-2">Myocardial Strain Analysis in Mice</h3>
-        <img src="./static/figures/MRI_strain.png" alt="MRI Strain Analysis" class="w-full h-84 object-cover rounded mb-4">
+        <img src="./static/figures/MRI_strain.png" alt="MRI Strain Analysis" class="w-full h-48 object-cover rounded mb-4">
         <p class="text-gray-600 mb-4">
-          Quantified myocardial strain in mouse hearts using CMR feature-tracking, collaborating with physiologists to analyze MRI data and predict cardiac function.
+          Validated CMR feature-tracking for quantifying LV systolic strains in mice against echocardiography speckle tracking, collaborating with physiologists to assess cardiac function in preclinical models.
         </p>
         <p class="text-gray-600 mb-4">
-          <strong>Skills:</strong> Data Analysis, Image Processing, Research, MATLAB
+          <strong>Skills:</strong> Data Analysis, Image Processing, Research, MATLAB, Statistical Analysis
+        </p>
+        <p class="text-gray-600 mb-4">
+          <strong>Links:</strong> <a href="https://link.springer.com/article/10.1007/s13239-022-00621-7" class="text-blue-600 hover:underline">Cardiovasc Eng Tech</a>
         </p>
         <div class="button-container" data-target="strain-details">
           <button class="toggle-details text-blue-600 hover:underline mb-4" data-target="strain-details">Read More</button>
         </div>
         <div id="strain-details" class="details hidden text-gray-600 mb-4 transition-all duration-300">
           <p>
-            In collaboration with the University of Kentucky’s Department of Physiology, I analyzed cardiac magnetic resonance (CMR) images to quantify myocardial strain in mouse models using feature-tracking techniques. Leveraging MATLAB for image processing, I developed workflows to extract systolic strain data, correlating it with contractile function to predict cardiac outcomes. This research, published in <i>Cardiovasc Eng Tech</i>, provided insights into heart disease mechanisms, demonstrating the potential of CMR strain analysis as a diagnostic tool in preclinical studies.
+            In collaboration with the University of Kentucky’s Department of Physiology, I validated cardiac magnetic resonance (CMR) feature-tracking (FT) for quantifying left ventricular (LV) systolic strains in mouse models, using high-resolution echocardiography speckle tracking (STE) as the gold standard. Using 7T MRI and Segment software, I analyzed CMR images from 10 C57BL/6J mice to measure longitudinal, circumferential, and radial strains, achieving high agreement with STE (e.g., global longitudinal strain: -18.5 ± 2.2% vs. -18.9 ± 2.7%). Published in <i>Cardiovascular Engineering and Technology</i>, this work established CMR-FT as a reliable, non-invasive tool for preclinical cardiac research, supporting studies of heart disease and drug development.
           </p>
+          <ul class="list-disc pl-5 mb-4">
+            <li>Processed 7T MRI cine images with Segment software to quantify LV systolic strains (longitudinal, circumferential, radial) in 10 wild-type mice.</li>
+            <li>Compared CMR-FT results against STE (VevoStrain), achieving high correlation (r > 0.85) and minimal Bland-Altman bias (e.g., 0.4 ± 1.8% for longitudinal strain).</li>
+            <li>Developed MATLAB-based workflows for image processing and statistical analysis, including Pearson correlation and paired t-tests.</li>
+            <li>Demonstrated CMR-FT’s reliability for global and segmental strain analysis, complementing STE’s temporal resolution with CMR’s spatial resolution.</li>
+            <li>Published findings in <i>Cardiovasc Eng Tech</i>, highlighting CMR-FT’s potential for non-invasive assessment in preclinical cardiac studies.</li>
+          </ul>
           <div class="button-container-bottom hidden" data-target="strain-details"></div>
         </div>
       </div>
